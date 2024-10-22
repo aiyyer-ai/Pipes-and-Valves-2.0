@@ -1,0 +1,154 @@
+html {
+	background-color: whitesmoke;
+	background-image: url('./images/background.png');
+	background-size: cover;
+	font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+	color: whitesmoke;
+	overflow: hidden;
+}
+
+* {
+ user-select: none; 
+ -moz-user-select: none;
+ -webkit-text-select: none;
+ -webkit-user-select: none;
+}
+
+.startButton {
+	width: 70px;
+	height: 35px;
+	background-color: whitesmoke;
+	border-radius: 5%;
+	text-align: center;
+	font-family: 'Bebas Neue';
+}
+
+.pipesContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: grid;
+  grid-gap: 25px;
+}
+
+.pipe {
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	align-self: center;
+  justify-self: center;
+}
+
+.intersection {
+	position: absolute;
+	background-color: white;
+	width: 45px;
+	height: 15px;
+	z-index: 7;
+}
+
+.colorFilter {
+	position: absolute;
+	width: 45px;
+	height: 15px;
+	z-index: 6;
+}
+
+.liquidBox {
+	position: absolute;
+}
+
+.boxHolderDebug {
+	width: 100%;
+	flex-direction: row;
+	position: absolute;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.filledContainer {
+/*	position: absolute;*/
+}
+
+.answerHolder {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.boxHolder {
+	height: 100%;
+	flex-direction: column;
+	position: absolute;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.buttonHolder {
+	width: 100%;
+	height: 35px;
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	z-index: 11;
+}
+
+.draggableElement {
+	position: absolute;
+	z-index: 6;	
+}
+
+.holder {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.debugPipeHolder {
+	background-color: whitesmoke;
+}
+
+.debugIntersectionsHolder {
+	background-color: gray;
+}
+
+.debugColorFilterHolder {
+	background-color: whitesmoke;
+}
+
+.debugEntranceHolder {
+	background-color: gray;
+}
+
+.imgcontainer {
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.imgcontainer img {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  position: absolute;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
